@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+
+
+
+
+        <div class="container">
+
+            <div data-name="Artilugia" data-sexo="f" data-color="naranja" class="card">
+                <img src="https://placekeanu.com/200">
+                <div class="title">
+                    <h4>Artilugia</h4>
+                </div>
+            </div>
+
+            <div data-name="Boris" data-sexo="m" data-color="negro" class="card">
+                <img src="https://placekeanu.com/500">
+                <div class="title">
+                    <h4>Boris</h4>
+                </div>
+            </div>
+
+            <div data-name="Pippin" data-sexo="m" data-color="gris" class="card">
+                <img src="https://placekeanu.com/400">
+                <div class="title">
+                    <h4>Pippin</h4>
+                </div>
+            </div>
+
+            <div data-name="Keanu" data-sexo="f" data-color="naranja" class="card">
+                <img src="https://placekeanu.com/500/">
+                <div class="title">
+                    <h4>Keanu</h4>
+                </div>
+            </div>
+
+        </div>
+      
+<div class="filtros"> 
+   
+        <label data-name="name" class="filtro-nombre"> Nombre
+            <input type="text"> </label>
+       
+
+
+        <label> Filtrar por Colores </label>
+        <button type="button" data-color="todos" class="filtro-boton"> Todos</button>
+        <button  type="button" data-color="naranja" class="filtro-boton naranja"> Naranja </button>
+        <button type="button"   data-color="negro" class="filtro-boton negro"> Negro </button>
+        <button type="button"  data-color="gris" class="filtro-boton gris "> Gris </button>
+
+
+        <label> Sexo </label>
+        <label><input type="radio" data-sexo="f" id="f" class="sexo"> Hembra</label>
+        <label><input type="radio" data-sexo="m" id="m" class="sexo"> Macho </label>
+        <label><input type="radio" data-sexo="i" id="i" class="sexo" > Indistinto</label>
+    </form>
+
+</div>
+    <script src="index.js"> </script>
+</body>
+
+</html>
