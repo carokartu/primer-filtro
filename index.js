@@ -26,7 +26,7 @@ const checkboxs = document.querySelectorAll(".sexo")
 console.log(checkboxs)
 
 for (let checkbox of checkboxs){
-    checkbox.onclick = () => {
+    checkbox.oninput = () => {
 
     for ( let card of cards) {
          
@@ -51,10 +51,10 @@ console.log(filtroNombre)
 
 filtroNombre.oniput = () => {
  for (let card of cards) {
-    const titulo = card.dataset.name;
-    const busqueda = filtroNombre.value;
-
-    if (titulo.includes(busqueda)) {
+    const titulo = card.dataset.name()
+    const busquedaMinuscula = filtroNombre.value.TolowerCase()
+    
+    if (titulo.includes(busquedaMinuscula)) {
 
        card.classList.remove('hidden');
      } 
