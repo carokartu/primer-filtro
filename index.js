@@ -46,10 +46,10 @@ for (let checkbox of checkboxs){
     }
 }
 
-const filtroNombre = document.querySelector(".filtro-nombre")
+const filtroNombre = document.querySelectorAll(".filtro-nombre")
 console.log(filtroNombre)
 
-filtroNombre.oninput = () => {
+filtroNombre.oniput = () => {
  for (let card of cards) {
     const titulo = card.dataset.name;
     const busqueda = filtroNombre.value;
